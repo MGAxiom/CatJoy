@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="preflight.css" />
+        <link rel="stylesheet" href="styles.css" />        
         <title>CatJoy</title>
     </head>
     <body>
@@ -10,12 +11,11 @@
             <header>
                 <div class="titre_principal">
                     <div class="logo">
-                        <img src="images/zozor_logo.png" alt="Logo de CatJoy" />
-                        <h1>CatJoy</h1>    
+                        <p>CatJoy</p>    
                     </div>
                 </div>
-                <nav>
-                    <ul>
+                <nav class="navbar">
+                    <ul class="navbar-list">
                         <li><a href="#home">Accueil</a></li>
                         <li><a href="#fonctionnalites">Fonctionnalités</a></li>
                         <li><a href="#faq">FAQ</a></li>
@@ -24,73 +24,73 @@
                 </nav>
             </header>
 
-            <section class="center-container cta" id="home">
-                <div class="center-block cta__container">
+            <section class="block-container_cta container" id="home">
+                <div class="center-block_cta__container">
                     <h1>Une application dédiée à vos chats et à leur bien-être</h1>
-                    <p>N'oubliez plus jamais les documents de votre chat, ses rappels de vaccins ou de lui racheter des croquettes.</p>
-                    <div>
-                        <a href="https://apps.apple.com/us/app/catjoy/id187227736" target="blank_">
-                            <img src="/images/badgeAppleST" alt="CatJoy iOS App"/>
-                        </a>
-                        <a href="https://play.google.com/store/apps/CatJoy" target="blank_">
-                            <img src="/images/badgeGooglePS" alt="CatJoy Android App"/>
-                        </a>  
-                    </div>
-                    <div>
-                        <a href="https://www.instagram.com/catjoy" target="blank_" class="cat__image">
-                            <img src="icons/instagram.png" alt="instagram"/>
+                    <p class="desc_cta">N'oubliez plus jamais de prendre les documents de votre chat lors de ses rendez-vous chez le vétérinaire, ni de faire sa litière ou encore de lui racheter son griffoir préféré. L'application CatJoy est là pour centraliser tous vos documents, rappels et vous permet même de rajouter des widgets et notifications sur votre téléphone.</p>
+                    <div class="cta_rsa">
+                        <a href="https://www.instagram.com/catjoy" target="blank_">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="cta_insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                         </a>
                         <a href="https://www.twitter.com/catjoy" target="blank_">
-                            <img src="icons/twitter.png" alt="twitter"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="cta_twitter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
                         </a>
                         <a href="https://www.facebook.com/catjoy" target="blank_">
-                            <img src="icons/instagram.png" alt="facebook"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="cta_fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
                         </a>
+                    </div>
+                    <div class="cta_download">
+                        <a href="https://apps.apple.com/us/app/catjoy/id187227736" target="blank_">
+                            <img src="./images/badgeApple1.png" alt="CatJoy iOS App"/>
+                        </a>
+                        <a href="https://play.google.com/store/apps/CatJoy" target="blank_">
+                            <img src="./images/badgeGooglePlay1.png" alt="CatJoy Android App"/>
+                        </a>  
                     </div>
                 </div>
 
-                <div class="cta__template">
-                    <img href="images/iphone.png" alt="CatJoy iOS template"/>
+                <div class="cta_template">
+                    <img src="./images/app_iphone_mockup.png" alt="CatJoy iOS template"/>
                 </div>
             </section>
 
-            <section class="fonctionnalite-section" id="fonctionnalites">
+            <section class="fonctionnalite-section container" id="fonctionnalites">
                 <h2 class="fonctionnalite-section-heading">Toutes les informations sur votre chat regroupées au même endroit et bien plus !</h2>
-                <div class="container">
+                <div class="container_fonct">
                     <div class="col-1">
                         <div class="hun">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"></path><path d="M3.5 12h6l.5-1 2 4.5 2-7 1.5 3.5h5"></path></svg>
-                            <h3>Documents Médicaux</h3>
+                            <h3 class="hun_h">Documents Médicaux</h3>
                         </div>
-                        <p>Lorem Ipsum Num Mergitur</p>
+                        <p>CatJoy vous permet de scanner et de stocker tous les documents médicaux de votre chat à un seul endroit.</p>
                     </div>
                     <div class="col-2">
                         <div class="hun">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 2 4 4"></path><path d="m17 7 3-3"></path><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"></path><path d="m9 11 4 4"></path><path d="m5 19-3 3"></path><path d="m14 4 6 6"></path></svg>
-                            <h3>Rappels</h3>
+                            <h3 class="hun_h">Rappels</h3>
                         </div>
-                        <p>Vaccins, Litière, Eau</p>
+                        <p>Vaccins, litière, eau, vous n'allez plus jamais oublier de vous occuper de votre chat !</p>
                     </div>
                     <div class="col-3">
                         <div class="hun">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="10" y1="6" x2="21" y2="6"></line><line x1="10" y1="12" x2="21" y2="12"></line><line x1="10" y1="18" x2="21" y2="18"></line><polyline points="3 6 4 7 6 5"></polyline><polyline points="3 12 4 13 6 11"></polyline><polyline points="3 18 4 19 6 17"></polyline></svg>
-                            <h3>Liste de courses</h3>
+                            <h3 class="hun_h">Liste de courses</h3>
                         </div>
-                        <p>Lorem Ipsum Num Mergitur</p>
+                        <p>CatJoy vous permet d'ajouter des aliments spécifiques à votre liste de course habituelle et stocke les informations pour vous.</p>
                     </div>
                     <div class="col-4">
                         <div class="hun">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><path d="M12.667 8 10 12h4l-2.667 4"></path></svg>
-                            <h3>Appareils connectés</h3>
+                            <h3 class="hun_h">Appareils connectés</h3>
                         </div>
-                        <p>Lorem Ipsum Num Mergitur</p>
+                        <p>Jouets, fontaine à eau, avec notre application vous allez pouvoir régler et piloter tous les appareils connectés de votre chat sous une seule interface. </p>
                     </div>
                 </div>
             </section>
 
-            <section class="center-container">
+            <section class="center-container container">
                 <div class="video-block">
-                    <video controls poster="/images/videos/video_demo.jpg" width="60%">
+                    <video controls poster="./images/video_thumbnail.png" class="video_container">
                         <source src="/images/videos/video_demo.mp4" type="video/mp4">
                         <source src="/images/videos/video_demo.ogg" type="video/ogg">
                         Votre navigateur ne supporte pas cette vidéo.
@@ -98,84 +98,101 @@
                 </div>
             </section>
 
-            <section class="container" id="faq">
-                <div class="section-title">
-                    <h2>FAQ</h2>
-                    <p>Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor incidiunt labore et dolore magna aliqua.</p>
+            <section class="faq_box" id="faq">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>FAQ</h2>
+                    </div>
+                    <ul class="row_FAQ">
+                        <li class="accordion">
+                            <h3>L'application CatJoy est-elle gratuite ?</h3>
+                            <p>Tout à fait ! L'application est disponible gratuit sur l'AppStore et sur le Google Play Store.  </p>
+                        </li>
+                        <li class="accordion">
+                            <h3>Puis-je rajouter plusieurs chats sur l'application ?</h3>
+                            <p>Il est possible de rajouter au maximum 20 profils pour chaque chat.</p>
+                        <li class="accordion">
+                            <h3>Faut-il vraiment créer un compte pour accéder à CatJoy ?</h3>
+                            <p>La création d'un compte sur l'application est indispensable pour y stocker vos données et établir les différents profil de vos chats.</p>
+                        </li>
+                        <li class="accordion">
+                            <h3>Est-ce que CatJoy supporte les appareils connectés sous Apple HomeKit ?</h3>
+                            <p>Oui, CatJoy est capable de supporter tous vos appapreils connectés qu'ils soient compatibles avec Apple HomeKit ou non.</p>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="row_FAQ">
-                    <li class="accordion">
-                        <h3>Question 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor incidiunt labore et dolore magna aliqua.</p>
-                    </li>
-                    <li class="accordion">
-                        <h3>Question 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor incidiunt labore et dolore magna aliqua.</p>
-                    </li>
-                    <li class="accordion">
-                        <h3>Question 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor incidiunt labore et dolore magna aliqua.</p>
-                    </li>
-                    <li class="accordion">
-                        <h3>Question 4</h3>
-                        <p>Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor incidiunt labore et dolore magna aliqua.</p>
-                    </li>
-                </ul>
             </section>
 
             <section class="container" id="contact">
-                <div class="section-title">
+                <div class="section-title-form">
                     <h2>Nous contacter</h2>
-                    <p>Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor incidiunt labore et dolore magna aliqua.</p>
+                    <p class="form_text">Tout ne se passe pas comme prévu avec notre application ? Si c'est le cas, vous pouvez utiliser le formulaire ci-dessous pour nous contacter.</p>
                 </div>
 
                 <form class="contact-form" action="">
                     <div class="contact-form__section">
-                        <div class="contact-form__item">
+                        <div class="contact_form__item contact_form__item--half">
                             <label for="name">Nom</label>
-                            <input type="text" name="name" id="name" required data-error="Ce champ est obligatoire" placeholder="Michel Sardou">
+                            <input class="contact_form_box" type="text" name="name" id="name" required data-error="Ce champ est obligatoire" placeholder="Michel Sardou">
                         </div>
-                        <div class="contact-form__item">
+                        <div class="contact_form__item contact_form__item--half">
                             <label for="email">Mail</label>
-                            <input type="text" name="email" id="email" required data-error="Ce champ est obligatoire" placeholder="miaoumiaou@gmail.com">
+                            <input class="contact_form_box" type="text" name="email" id="email" required data-error="Ce champ est obligatoire" placeholder="miaoumiaou@gmail.com">
                         </div>
                     </div>
                     <div class="contact-form__item">
                         <label for="message">Message</label>
-                        <textarea type="text" name="message" id="message" cols="30" row="6" required data-error="Ce champ est obligatoire" placeholder="J'adore votre application !"></textarea>
+                        <textarea class="message_form" type="text" name="message" id="message" cols="30" row="6" required data-error="Ce champ est obligatoire" placeholder="J'adore votre application !"></textarea>
                     </div>
-                    <button type="submit">Envoyer</button>
+                    <button class="button_form" type="submit" class="button">Envoyer</button>
                 </form>
             </section>
 
-            <section class="container">
-                <div class="newsletter-form">
-                    <h2>S'inscrire à la Newsletter</h2>
-                    <form action="">
+            <section class="newsletter">
+                <div class="container">
+                    <h2 class="newsletter_title">S'inscrire à la Newsletter</h2>
+                    <form action="" class="newsletter-form">
                         <input type="email" class="input-newsletter" placeholder="Votre email" name="EMAIL">
-                        <button type="submit">Inscrivez-vous !</button>
+                        <button class="news_button" type="submit">Inscrivez-vous !</button>
                     </form>
                 </div>
             </section>
 
-            <section class="download">
-                <h2>Télécharger CatJoy</h2>
-                <div>
-                    <a href="https://apps.apple.com/us/app/catjoy/id187227736" target="blank_">
-                        <img src="/images/badgeAppleST" alt="CatJoy iOS App">
-                    </a>
-                    <a href="https://play.google.com/store/apps/CatJoy" target="blank_">
-                        <img src="/images/badgeGooglePS" alt="CatJoy Android App">
-                    </a>
+            <section class="pre_footer container">
+                <div class="download pre_footer__item">
+                    <h2>Télécharger CatJoy</h2>
+                    <div class="download2">
+                        <a href="https://apps.apple.com/us/app/catjoy/id187227736" target="blank_">
+                            <img src="./images/badgeApple1.png" alt="CatJoy iOS App">
+                        </a>
+                        <a href="https://play.google.com/store/apps/CatJoy" target="blank_">
+                            <img src="./images/badgeGooglePlay1.png" alt="CatJoy Android App">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nous_retrouver pre_footer__item">
+                    <h2>Nous retrouver</h2>
+                    <div class="cta2">
+                        <a href="https://www.instagram.com/catjoy" target="blank_">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="cta2_insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="https://www.twitter.com/catjoy" target="blank_">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="cta2_twitter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        </a>
+                        <a href="https://www.facebook.com/catjoy" target="blank_" class="fb_link">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="cta2_fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                    </div>
                 </div>
             </section>  
 
             <footer>
               <p>
-                Ce site utilise des cookies. Vous pouvez retrouver nos 
+                Ce site utilise des cookies. Vous pouvez retrouver ici nos 
                 <a href="about.php" class="TOU" target="blank_">Termes d'utilisations</a> 
                 et notre 
-                <a href="privacy.php" class="PdC" target="blank_">Politique de confidentialité</a>
+                <a href="privacy.php" class="PdC" target="blank_">Politique de confidentialité.</a>
               </p>
             </footer>
         </div>
